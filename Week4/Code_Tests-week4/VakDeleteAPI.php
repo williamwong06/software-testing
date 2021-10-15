@@ -4,12 +4,12 @@ $conn = new mysqli('ID328986_SchoolDB.db.webhosting.be', 'ID328986_SchoolDB', 'a
 if($conn === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
-$Naam = mysqli_real_escape_string($conn, $_REQUEST['Naam']);
-$sql = "INSERT INTO Campus (Naam) VALUES ('$Naam')";
+$ID = mysqli_real_escape_string($conn, $_REQUEST['ID']);
+$sql = "DELETE FROM Vak WHERE ID = ('$ID')";
 if(mysqli_query($conn, $sql)){
-    echo "uw data is ingevoerd.";
+    echo "Vak is verwijderd.";
 } else{
-    echo "fout: kan data niet invoeren. " . mysqli_error($conn);
+    echo "fout: kan vak niet verwijderen. " . mysqli_error($conn);
 }
 mysqli_close($conn);
 ?>
