@@ -16,8 +16,13 @@
 * Beginnen met het schrijven van een nieuwe uitgebreidere API + Testen + Troubleshoot: 6 uur 
 * verbeteringen aanbrengen na testen: 1 uur
 * documentatie: 2 uur
-## week 5: nog actief
+## week 5
 * les gastcollege: 2uur
 * Udemy cursus bekeken section 7 - 8 - 9: 3 uur
 * research over section 7 en 8 van de Udemy cursus gedaan: 1 uur
 * Note: deze week enkel theorie en research gedaan
+## week 6: nog actief
+* les gastcollege: 2uur
+* Udemy cursus bekeken section 10 - 12 - 13 - 14 -15 -16 - 17: 6 uur
+* oefeningen van de sections gemaakt: 4 uur => documentatie volgt nog, aantal zaken moest ik nog opzoeken
+* begonnen aan opdracht 3: 2 uur => documentatie volgt nog
