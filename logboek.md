@@ -27,4 +27,4 @@
 * oefeningen van de sections gemaakt: 4 uur
 * begonnen aan opdracht 3: 2 uur
 ## week 7: nog actief
-* documentatie en oefeningen afwerken/door opzoekwerk: 3uur
+* documentatie en oefeningen afwerken/door opzoekwerk: 3 uur
