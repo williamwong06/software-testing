@@ -29,3 +29,8 @@
 ## week 7
 * documentatie en oefeningen afwerken/door opzoekwerk: 3 uur => nog niet af => vervolg week 8
 ## week 8
+* afmaken documentatie Udemy cursus: 1 uur 30 min
+* tutorials bekijken + opzoekwerk over Newman => te beknopt en niet zo duidelijke uitleg bij UDEMY => links https://www.youtube.com/watch?v=3Di0klLe590 + https://www.youtube.com/watch?v=lar1gzDbY78: 45 min
+* opdracht 3 analyse afgewerkt: 3 uur
+* documentatie analyse 2u
+* opstart voor opdracht 3: databank aanmaken + relaties en constraints + gegevens in databank => manueel ingevoerd omdat ik specifieke data nodig had en geen random data, dus duurde iets langer: 2 uur 
