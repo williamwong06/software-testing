@@ -38,3 +38,8 @@
 ## week 9
 * opdracht 3: API creëren + testing: 6 uur => nog meer testen nodig => vervolg volgende week
 * opdracht 3: documentatie: 2 uur => nog niet helemaal af
+## week 10
+* les: 1 uur
+* opdracht 3 + 4: API testing(negatieve + automated tests) + front end testing: 7 uur => verdere documentatie + vervolg komt nog
+
+
