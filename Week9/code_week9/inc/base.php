@@ -1,7 +1,6 @@
 <?php
 
-// Met de volgende if kan je een test doen om te zien of de request uit je app komt.
-// Voor dit voorbeeld is de 'die' uitgeschakeld
+
 if(empty($_SERVER['HTTP_X_REQUESTED_WITH']) || !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && 
     (strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) !== 'be.williamwong'  &&
      strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) !== 'be.ophalvens.williamwong.webshop')) { 
@@ -49,11 +48,6 @@ function deliver_JSONresponse(&$api_response) {
     echo $json_response;
     exit;
 }
-/*
- getJsonObjFromResult krijgt een resultset (by reference) en forceert alle
- nummerieke velden naan numerieke waarden, zodat clientside niet nog eens
- moet worden omgezet naar getallen voor velden met getalwaarden.
-*/
 function getJsonObjFromResult(&$result){
     $fixed = array();
     $typeArray = array(
@@ -62,12 +56,9 @@ function getJsonObjFromResult(&$result){
                     MYSQLI_TYPE_DECIMAL, 
                     MYSQLI_TYPE_FLOAT, MYSQLI_TYPE_DOUBLE );
     $fieldList = array();
-    // haal de veldinformatie van de velden in deze resultset op
     while($info = $result->fetch_field()){
         $fieldList[] = $info;
     }
-    // haal de data uit de result en pas deze aan als het veld een
-    // getaltype zou moeten bevatten
     while ($row = $result -> fetch_assoc()) {
         $fixedRow = array();
         $teller = 0;
@@ -81,7 +72,7 @@ function getJsonObjFromResult(&$result){
         }
         $fixed[] = $fixedRow;
     }
-    // geef een json object terug
+  
     return json_encode($fixed, JSON_UNESCAPED_UNICODE);
 }
 ?>

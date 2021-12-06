@@ -41,5 +41,7 @@
 ## week 10
 * les: 1 uur
 * opdracht 3 + 4: API testing(negatieve + automated tests) + front end testing: 7 uur => verdere documentatie + vervolg komt nog
-
+## week 11
+* opdracht 3 + 4: API testing(negatieve + automated tests) + front end testing: 7 uur => verdere documentatie + vervolg komt nog
+* documentatie: 2u => nog af te werken
 

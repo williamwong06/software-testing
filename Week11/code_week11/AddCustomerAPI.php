@@ -11,7 +11,7 @@ $email = mysqli_real_escape_string($conn, $_REQUEST['Email']);
 $password = mysqli_real_escape_string($conn, $_REQUEST['Password']);
 $address = mysqli_real_escape_string($conn, $_REQUEST['Address']);
 $telephone = mysqli_real_escape_string($conn, $_REQUEST['Telephone']);
-$sql = "INSERT INTO Customers (Login, FirstName, LastName, Email, Password, Address, Telephone) VALUES ('$login','$firstName', '$lastName', '$email', '$password', '$address', '$telephone')";
+$sql = "INSERT INTO Customers (Login, FirstName, LastName, Email, Password, Address, Telephone) VALUES ('$Login','$firstName', '$lastName', '$email', '$password', '$address', '$telephone')";
 if(mysqli_query($conn, $sql)){
     echo "Customer {$firstName} added.";
 } else{

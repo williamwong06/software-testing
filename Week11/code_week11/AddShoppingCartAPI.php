@@ -7,9 +7,9 @@ header('Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-W
 header('Content-type: application/json');
 
 $servername = "ID328986_webShop.db.webhosting.be";
-$username = "ID328986_webShop";
-$password = "azerty123"; 
-$dbname = "ID328986_webShop"; 
+$username = "ID328986_webShop"; // username (zie Hosting)
+$password = "azerty123"; // paswoord DATABANK (zie hosting)
+$dbname = "ID328986_webShop"; // naam databank (zie hosting ; zelf gekozen)
 
 $conn = mysqli_connect($servername, $username, $password, $dbname) or die(mysqli_connect_error());
 if($conn === false){
