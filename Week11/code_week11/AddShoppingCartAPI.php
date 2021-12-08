@@ -20,17 +20,24 @@ $ID = mysqli_real_escape_string($conn, $_REQUEST['ID']);
 $CustomerLogin = mysqli_real_escape_string($conn, $_REQUEST['CustomerLogin']);
 $Price = mysqli_real_escape_string($conn, $_REQUEST['Price']);
 
-//$sql = "INSERT INTO ShoppingCarts (ID, CustomerLogin, Price) VALUES ('$ID','$CustomerLogin', '$Price')";
-$sql = "select * FROM ShoppingCarts where ID = $ID";
+$sql = "INSERT INTO ShoppingCarts (ID, CustomerLogin, Price) VALUES ('$ID','$CustomerLogin', '$Price')";
+if(mysqli_query($conn, $sql)){
+    echo "shopping cart $ID added.";
+} else{
+    echo "error: Can not add shopping cart. " . mysqli_error($conn);
+}
+mysqli_close($conn);
 
-$result = $conn ->query($sql);
+//$sql = "select * FROM ShoppingCarts where ID = $ID";
+
+/*$result = $conn ->query($sql);
 while($row = $result
 ->fetch_assoc()) {
     $data[] = $row;
 }
 echo json_encode($data);
 mysqli_close($conn);
-
+*/
 // test
 /*if(mysqli_query($conn, $sql)){
     echo "shoppingcart $ID is gevonden.";

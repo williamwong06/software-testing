@@ -3,9 +3,12 @@ header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST');
 header('Access-Control-Max-Age: 1000');
 header('Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With');
-$conn = new mysqli('ID328986_webShop.db.webhosting.be', 'ID328986_webShop', 'azerty123', 'ID328986_webShop');
+//$conn = new mysqli('ID328986_webShop.db.webhosting.be', 'ID328986_webShop', 'azerty123', 'ID328986_webShop');
+define ('INDEX', true);
+require 'inc/dbcon.php';
+require 'inc/base.php';
 
-$stmt = $conn->prepare("select * FROM Customers WHERE Login like ? and Password like ?"); 
+$stmt = $conn->prepare("select * FROM Customers WHERE Login = ? and Password = ?"); 
 
 
 if(!$stmt->bind_param("ss", $postvars['Login'], $postvars['Password'])){

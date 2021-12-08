@@ -2,7 +2,7 @@
 
 if(empty($_SERVER['HTTP_X_REQUESTED_WITH']) || !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && 
     (strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) !== 'be.williamwong'  &&
-     strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) !== 'be.ophalvens.williamwong.webshop')) { 
+     strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) !== 'be.williamwong.webshop')) { 
 } 
 
 if (!defined('INDEX')) {
