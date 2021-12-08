@@ -11,15 +11,25 @@ require 'inc/base.php';
 
 //$stmt = $conn->prepare("select * FROM Products WHERE Price < $_POST['category']"); 
 $Price = $_POST['Price'];
-$sql = "SELECT * FROM Products WHERE Price <='" . $Price . "'";
-
-$data = array();
-$result = $conn ->query($sql);
-while($row = $result
-->fetch_assoc()) {
-    $data[] = $row;
+if(is_numeric($Price)) {
+    if($Price < 0) {
+        echo "error: Price has to be greater than 0.";
+    }
+    else {
+        $sql = "SELECT * FROM Products WHERE Price <='" . $Price . "'";
+        $data = array();
+        $result = $conn ->query($sql);
+        while($row = $result
+        ->fetch_assoc()) {
+            $data[] = $row;
+        }
+        echo json_encode($data);
+    }
 }
-echo json_encode($data);
+else {
+    echo "error: Price has to be numeric.";
+}
+
 exit(0);
 /*if(!$stmt->bind_param("d", $postvars['Price'])){
     $response['code'] = 7;
