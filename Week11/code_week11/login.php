@@ -8,6 +8,21 @@ define ('INDEX', true);
 require 'inc/dbcon.php';
 require 'inc/base.php';
 
+/*$Price = $_POST['Login'];
+$Password = $_POST['Password'];
+
+//$sql = "SELECT * FROM Customers WHERE Login ='" . $Login . "' && Password ='" . $Password . "'";
+$sql = "SELECT * FROM Customers WHERE Login ='" . $Login . "'";
+$data = array();
+$result = $conn ->query($sql);
+while($row = $result
+->fetch_assoc()) {
+    $data[] = $row;
+}
+echo json_encode($data);
+
+exit(0);*/
+
 $stmt = $conn->prepare("select * FROM Customers WHERE Login = ? and Password = ?"); 
 
 

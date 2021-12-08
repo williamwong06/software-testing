@@ -19,12 +19,21 @@ if($conn === false){
 $ID = mysqli_real_escape_string($conn, $_REQUEST['ID']);
 $CustomerLogin = mysqli_real_escape_string($conn, $_REQUEST['CustomerLogin']);
 $Price = mysqli_real_escape_string($conn, $_REQUEST['Price']);
-
-$sql = "INSERT INTO ShoppingCarts (ID, CustomerLogin, Price) VALUES ('$ID','$CustomerLogin', '$Price')";
-if(mysqli_query($conn, $sql)){
-    echo "shopping cart $ID added.";
-} else{
-    echo "error: Can not add shopping cart. " . mysqli_error($conn);
+if(preg_match("/[a-z]/i", $Price)) {
+    echo "Price may only contain  numbers";
+}
+else {
+    if($Price >= 0) {
+        $sql = "INSERT INTO ShoppingCarts (ID, CustomerLogin, Price) VALUES ('$ID','$CustomerLogin', '$Price')";
+        if(mysqli_query($conn, $sql)){
+            echo "shopping cart $ID added.";
+        } else{
+            echo "error: Can not add shopping cart. " . mysqli_error($conn);
+        }
+    }
+    else {
+        echo "error: price must be greater than zero.";
+    }
 }
 mysqli_close($conn);
 
