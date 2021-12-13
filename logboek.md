@@ -44,4 +44,8 @@
 ## week 11
 * opdracht 3 + 4: API testing(negatieve + automated tests) + front end testing: 7 uur => verdere documentatie + vervolg komt nog
 * documentatie: 2u => nog af te werken
+## week 12
+* opdracht 3 + 4: API testing afgewerkt 3 uur 
+* front end testing = test scenario's: 3 uur
+* documentatie: 1u => nog af te werken
 
