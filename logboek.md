@@ -48,4 +48,6 @@
 * opdracht 3 + 4: API testing afgewerkt 3 uur 
 * front end testing = test scenario's: 3 uur
 * documentatie: 1u => nog af te werken
+## week 13
+* test scenario's: 4 uur => documentatie volgt
 
