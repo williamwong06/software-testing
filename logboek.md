@@ -50,4 +50,6 @@
 * documentatie: 1u => nog af te werken
 ## week 13
 * test scenario's: 4 uur => documentatie volgt
-
+## week 14
+* collection: 2 uur => documentatie volgt
+* niet veel anders kunnen doen door deadline ander vak
