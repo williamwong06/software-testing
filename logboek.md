@@ -53,6 +53,6 @@
 ## week 14
 * Postman collection: 2 uur => documentatie volgt
 * niet veel anders kunnen doen door deadline ander vak
-## week 15
+## Week 15
 * test scenario's + test cases + documentatie: 6 u
 * project aanpassen op basis van test scenario's + test cases + documentatie: 3 uur
