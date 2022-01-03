@@ -49,8 +49,7 @@
 * front end testing = test scenario's: 3 uur
 * documentatie: 1u => nog af te werken
 ## week 13
-* test scenario's: 4 uur
+* test scenario's: 4 uur => documentatie volgt
 ## week 14
-* collections: 2 uur
-## week 15
-* verderwerken aan test cases en op basis hiervan project aanpassen + documentatie: 8 uur
+* collection: 2 uur => documentatie volgt
+* niet veel anders kunnen doen door deadline ander vak
