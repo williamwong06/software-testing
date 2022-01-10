@@ -56,3 +56,6 @@
 ## Week 15
 * test scenario's + test cases + documentatie: 6 u
 * project aanpassen op basis van test scenario's + test cases + documentatie: 3 uur
+## Week 16
+* test scenario's + test cases afwerken + documentatie: 7 u
+* project aanpassen op basis van test scenario's + test cases + documentatie: 2 uur
